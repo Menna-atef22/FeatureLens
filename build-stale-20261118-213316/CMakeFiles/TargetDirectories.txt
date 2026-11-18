@@ -1,0 +1,3 @@
+C:/Users/menna/Downloads/C#/FeatureLens/FeatureLens/build/CMakeFiles/FeatureLens.dir
+C:/Users/menna/Downloads/C#/FeatureLens/FeatureLens/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/menna/Downloads/C#/FeatureLens/FeatureLens/build/CMakeFiles/ZERO_CHECK.dir
