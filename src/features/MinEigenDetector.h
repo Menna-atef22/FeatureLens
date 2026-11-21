@@ -1,7 +1,19 @@
 #pragma once
-// ===== Person 2 : Min Eigenvalue (lambda-) / Shi-Tomasi =====
-// TODO (Person 2): implement the detector here + MinEigenDetector.cpp
-// Tip: reuse the same structure tensor as Harris, response = min(lambda1, lambda2)
-//   lambda- = (a + c)/2 - sqrt(((a - c)/2)^2 + b^2)
+// ===== Min Eigenvalue (lambda-) / Shi-Tomasi corner detector =====
 #include <vector>
 #include "common/Image.h"
+
+struct MinEigenParams {
+    int   gaussRadius    = 2;      // window radius for Ix2, Iy2, Ixy
+    float sigma          = 1.0f;   // gaussian sigma of the window
+    float thresholdRatio = 0.01f;  // keep lambda- > ratio * max lambda-
+    int   nmsRadius      = 3;      // non-max suppression radius
+};
+
+class MinEigenDetector {
+public:
+    // Returns detected corners; elapsedMs = computation time in milliseconds.
+    static std::vector<Corner> detect(const GrayImage& img,
+                                      const MinEigenParams& p,
+                                      double& elapsedMs);
+};

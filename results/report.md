@@ -1,0 +1,64 @@
+# Assignment 3 results
+
+| Algorithm | Image | Variant | Points / matches | Time | Extra |
+|---|---|---|---|---|---|
+| harris | 01_square | color | 4 | 19.306 ms |  |
+| mineig | 01_square | color | 4 | 18.078 ms |  |
+| sift | 01_square | color | 10 | detect 98.325 ms | describe 0.919 ms |
+| harris | 01_square | gray | 4 | 16.451 ms |  |
+| mineig | 01_square | gray | 4 | 13.813 ms |  |
+| sift | 01_square | gray | 10 | detect 74.692 ms | describe 0.674 ms |
+| ssd | 01_square | vs rotated copy | 3 | match 0.037 ms | SIFT(A+B) 123.513 ms |
+| ncc | 01_square | vs rotated copy | 10 | match 0.096 ms | SIFT(A+B) 98.206 ms |
+| harris | 02_multiple_shapes | color | 12 | 10.920 ms |  |
+| mineig | 02_multiple_shapes | color | 12 | 11.104 ms |  |
+| sift | 02_multiple_shapes | color | 45 | detect 55.954 ms | describe 3.972 ms |
+| harris | 02_multiple_shapes | gray | 12 | 12.426 ms |  |
+| mineig | 02_multiple_shapes | gray | 12 | 11.015 ms |  |
+| sift | 02_multiple_shapes | gray | 45 | detect 56.481 ms | describe 3.894 ms |
+| ssd | 02_multiple_shapes | vs rotated copy | 25 | match 0.315 ms | SIFT(A+B) 132.515 ms |
+| ncc | 02_multiple_shapes | vs rotated copy | 39 | match 0.908 ms | SIFT(A+B) 133.391 ms |
+| harris | 03_house | color | 735 | 12.698 ms |  |
+| mineig | 03_house | color | 1457 | 12.268 ms |  |
+| sift | 03_house | color | 581 | detect 60.553 ms | describe 48.486 ms |
+| harris | 03_house | gray | 735 | 12.981 ms |  |
+| mineig | 03_house | gray | 1457 | 12.318 ms |  |
+| sift | 03_house | gray | 581 | detect 60.146 ms | describe 49.833 ms |
+| ssd | 03_house | vs rotated copy | 310 | match 18.394 ms | SIFT(A+B) 218.774 ms |
+| ncc | 03_house | vs rotated copy | 275 | match 54.867 ms | SIFT(A+B) 215.777 ms |
+| harris | 04_chessboard | color | 49 | 12.494 ms |  |
+| mineig | 04_chessboard | color | 50 | 10.908 ms |  |
+| sift | 04_chessboard | color | 486 | detect 58.359 ms | describe 35.600 ms |
+| harris | 04_chessboard | gray | 49 | 12.240 ms |  |
+| mineig | 04_chessboard | gray | 50 | 11.076 ms |  |
+| sift | 04_chessboard | gray | 486 | detect 59.199 ms | describe 35.705 ms |
+| ssd | 04_chessboard | vs rotated copy | 18 | match 29.958 ms | SIFT(A+B) 300.690 ms |
+| ncc | 04_chessboard | vs rotated copy | 364 | match 80.859 ms | SIFT(A+B) 284.422 ms |
+| harris | 05_letter_A | color | 15 | 13.322 ms |  |
+| mineig | 05_letter_A | color | 23 | 11.395 ms |  |
+| sift | 05_letter_A | color | 54 | detect 57.333 ms | describe 4.911 ms |
+| harris | 05_letter_A | gray | 15 | 19.361 ms |  |
+| mineig | 05_letter_A | gray | 23 | 17.861 ms |  |
+| sift | 05_letter_A | gray | 54 | detect 57.400 ms | describe 4.891 ms |
+| ssd | 05_letter_A | vs rotated copy | 37 | match 0.213 ms | SIFT(A+B) 129.121 ms |
+| ncc | 05_letter_A | vs rotated copy | 46 | match 0.615 ms | SIFT(A+B) 130.275 ms |
+| ssd | 01_square <-> 02_multiple_shapes | image pair | 4 | match 0.036 ms | SIFT(A+B) 113.415 ms |
+| ncc | 01_square <-> 02_multiple_shapes | image pair | 10 | match 0.121 ms | SIFT(A+B) 113.158 ms |
+| ssd | 01_square <-> 03_house | image pair | 5 | match 0.381 ms | SIFT(A+B) 129.010 ms |
+| ncc | 01_square <-> 03_house | image pair | 0 | match 0.969 ms | SIFT(A+B) 129.050 ms |
+| ssd | 01_square <-> 04_chessboard | image pair | 0 | match 0.303 ms | SIFT(A+B) 117.902 ms |
+| ncc | 01_square <-> 04_chessboard | image pair | 0 | match 0.773 ms | SIFT(A+B) 117.648 ms |
+| ssd | 01_square <-> 05_letter_A | image pair | 0 | match 0.034 ms | SIFT(A+B) 90.052 ms |
+| ncc | 01_square <-> 05_letter_A | image pair | 0 | match 0.111 ms | SIFT(A+B) 112.376 ms |
+| ssd | 02_multiple_shapes <-> 03_house | image pair | 4 | match 1.856 ms | SIFT(A+B) 164.496 ms |
+| ncc | 02_multiple_shapes <-> 03_house | image pair | 0 | match 5.219 ms | SIFT(A+B) 170.001 ms |
+| ssd | 02_multiple_shapes <-> 04_chessboard | image pair | 0 | match 1.504 ms | SIFT(A+B) 165.068 ms |
+| ncc | 02_multiple_shapes <-> 04_chessboard | image pair | 0 | match 4.709 ms | SIFT(A+B) 164.595 ms |
+| ssd | 02_multiple_shapes <-> 05_letter_A | image pair | 11 | match 0.240 ms | SIFT(A+B) 121.621 ms |
+| ncc | 02_multiple_shapes <-> 05_letter_A | image pair | 15 | match 0.636 ms | SIFT(A+B) 132.568 ms |
+| ssd | 03_house <-> 04_chessboard | image pair | 3 | match 20.112 ms | SIFT(A+B) 204.162 ms |
+| ncc | 03_house <-> 04_chessboard | image pair | 4 | match 60.056 ms | SIFT(A+B) 212.060 ms |
+| ssd | 03_house <-> 05_letter_A | image pair | 13 | match 2.350 ms | SIFT(A+B) 179.608 ms |
+| ncc | 03_house <-> 05_letter_A | image pair | 2 | match 5.050 ms | SIFT(A+B) 190.938 ms |
+| ssd | 04_chessboard <-> 05_letter_A | image pair | 6 | match 2.070 ms | SIFT(A+B) 185.125 ms |
+| ncc | 04_chessboard <-> 05_letter_A | image pair | 0 | match 5.366 ms | SIFT(A+B) 174.633 ms |

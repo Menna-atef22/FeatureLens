@@ -38,3 +38,11 @@ if(WINDEPLOYQT_EXECUTABLE)
         COMMAND "${WINDEPLOYQT_EXECUTABLE}" --no-translations "$<TARGET_FILE:FeatureLens>"
         VERBATIM)
 endif()
+
+# Headless tool (no GUI) used by tools/run_all.py to generate all result images + timings
+add_executable(FeatureLensBatch
+    tools/batch.cpp
+    src/common/Image.cpp src/common/Draw.cpp
+    src/features/HarrisDetector.cpp src/features/MinEigenDetector.cpp
+    src/features/SiftDetector.cpp src/features/Matcher.cpp)
+target_include_directories(FeatureLensBatch PRIVATE src)
