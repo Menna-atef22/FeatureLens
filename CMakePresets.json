@@ -3,12 +3,13 @@
   "configurePresets": [
     {
       "name": "windows-msvc",
-      "displayName": "Windows MSVC with Qt 6.12",
-      "generator": "Visual Studio 18 2026",
-      "architecture": "x64",
+      "displayName": "Windows MinGW with Qt 6.9",
+      "generator": "Ninja",
       "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
-        "CMAKE_PREFIX_PATH": "C:/Qt/6.12.0/msvc2022_64"
+        "CMAKE_PREFIX_PATH": "C:/Qt/6.9.1/mingw_64",
+        "CMAKE_C_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/Qt/Tools/mingw1310_64/bin/g++.exe"
       }
     }
   ],

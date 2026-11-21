@@ -5,7 +5,8 @@ REM         build.bat results    -> build, then run tools\run_all.py (needs Pyth
 REM Edit CMakePresets.json (CMAKE_PREFIX_PATH) if your Qt is installed somewhere else.
 setlocal
 cd /d "%~dp0"
-cmake --preset windows-msvc || goto :err
+set "PATH=C:\Qt\Tools\mingw1310_64\bin;C:\Qt\Tools\Ninja;C:\Qt\6.9.1\mingw_64\bin;%PATH%"
+cmake --fresh --preset windows-msvc || goto :err
 cmake --build build --config Release || goto :err
 echo.
 echo Built: build\Release\FeatureLens.exe  and  build\Release\FeatureLensBatch.exe
