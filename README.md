@@ -37,8 +37,6 @@ Pick Image A and Image B, choose the metric, and press **Match this pair** (or *
 
 ![Matching – SSD, 19 matches](docs/screenshots/05_matching_ssd.png)
 
-![Matching – SSD, 24 matches](docs/screenshots/06_matching_ssd_24.png)
-
 ---
 
 ## Features
